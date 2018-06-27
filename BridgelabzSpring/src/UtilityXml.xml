@@ -5,7 +5,24 @@
     xmlns:p="http://www.springframework.org/schema/p"  
     xsi:schemaLocation="http://www.springframework.org/schema/beans  
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
-  
+ 
+<bean id="addressbean"
+ class="com.bridgelabz.spring.dependency_injection_by_constructor.dependent_object.Address"
+>  
+<constructor-arg value="Kolkata"></constructor-arg>
+<constructor-arg value="West Bengal"></constructor-arg>
+<constructor-arg value="743144" type="int"></constructor-arg>
+</bean>
+
+<bean id="personbean"
+ class="com.bridgelabz.spring.dependency_injection_by_constructor.dependent_object.Person"
+>  
+<constructor-arg value="001"></constructor-arg>
+<constructor-arg value="Jayanta Roy"></constructor-arg>
+<constructor-arg>  
+<ref bean="addressbean"/>  
+</constructor-arg>  
+</bean>   
 <bean id="studentbean" class="com.bridgelabz.spring.firstspring.Student">  
 <property name="name" value="Jayanta Roy"></property>  
 <property name="mobile" value="8961176762"></property>  
@@ -17,4 +34,34 @@
 <constructor-arg value="10" type="int"></constructor-arg>
 <constructor-arg value="Jayanta"></constructor-arg>
 </bean>
+
+<bean id="questionbean"
+ class="com.bridgelabz.spring.dependency_injection_by_constructor.collection_inject.Question"
+>  
+<constructor-arg value="1" type="int"></constructor-arg>
+<constructor-arg value="How many colours are there in Indian national flag?"></constructor-arg>
+<constructor-arg>
+<list>
+<value>a. 2</value>
+<value>b. 3</value>
+<value>c. 4</value>
+</list>
+</constructor-arg>
+</bean>
+
+<bean id="per1" class="com.bridgelabz.spring.dependency_injection_by_constructor.dependent_object.Person">
+<constructor-arg value="2" type="int"></constructor-arg>
+<constructor-arg value="Abhijit Das"></constructor-arg>
+</bean>
+
+<bean id="address1" class="com.bridgelabz.spring.dependency_injection_by_constructor.dependent_object.Address">
+<constructor-arg value="Texas" ></constructor-arg>
+<constructor-arg value="US"></constructor-arg>
+<constructor-arg value="100562" type="int"></constructor-arg>
+</bean>
+
+<bean id="per2" class="com.bridgelabz.spring.dependency_injection_by_constructor.dependent_object.Person" parent="per1">
+<constructor-arg ref="address1"></constructor-arg>
+</bean>
+
 </beans>  

@@ -10,7 +10,11 @@ package com.bridgelabz.spring.firstspring;
 public class Student {
 	private String name;  
 	private String mobile;
-	  
+	 
+	public Student()
+	{
+		System.out.println("This is default constructor of Student class");
+	}
 	public String getName() {  
 	    return name;  
 	}  
