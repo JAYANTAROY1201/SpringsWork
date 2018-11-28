@@ -1,5 +1,23 @@
 {"jayantadata":[
  {"date":"20110101","comparisontype":"0"},
- {"date":"20110102","comparisontype":"112"}
+ {"date":"20110102","comparisontype":"112"},
+ {"date":"20110107","comparisontype":"223"},
+ {"date":"20110108","comparisontype":"332"},
+ {"date":"20110109","comparisontype":"1212"},
+ {"date":"20110110","comparisontype":"1234"},
+ {"date":"20110111","comparisontype":"0"},
+ {"date":"20110112","comparisontype":"213"},
+ {"date":"20110113","comparisontype":"2231"},
+ {"date":"20110114","comparisontype":"1256"},
+ {"date":"20110115","comparisontype":"2231"},
+ {"date":"20110116","comparisontype":"3442"},
+ {"date":"20110117","comparisontype":"0"},
+ {"date":"20110118","comparisontype":"8013"},
+ {"date":"20110119","comparisontype":"1857"},
+ {"date":"20110120","comparisontype":"6085"},
+ {"date":"20110121","comparisontype":"5533"},
+ {"date":"20110124","comparisontype":"3217"},
+ {"date":"20110125","comparisontype":"6966"},
+ {"date":"20110126","comparisontype":"7116"}
 ]
 }
